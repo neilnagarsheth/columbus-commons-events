@@ -1,0 +1,22 @@
+{
+  "name": "columbus-commons-events",
+  "version": "1.0.0",
+  "description": "REST API for retrieving events on columbus commons",
+  "main": "index.js",
+  "author": "Neil Nagarsheth",
+  "license": "MIT",
+  "scripts": {
+    "dev-watch": "nodemon -r esm index.js",
+    "dev": "node -r esm index.js"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
