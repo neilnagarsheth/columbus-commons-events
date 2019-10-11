@@ -6,8 +6,8 @@
   "author": "Neil Nagarsheth",
   "license": "MIT",
   "scripts": {
-    "dev-watch": "nodemon -r esm index.js",
-    "dev": "node -r esm index.js"
+    "start": "node -r esm index.js",
+    "dev": "nodemon -r esm index.js"
   },
   "dependencies": {
     "esm": "^3.2.25",
