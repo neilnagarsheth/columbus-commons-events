@@ -14,7 +14,8 @@
     "express": "^4.17.1",
     "moment": "^2.24.0",
     "request": "^2.88.0",
-    "request-promise": "^4.2.4"
+    "request-promise": "^4.2.4",
+    "string-strip-html": "^4.3.2"
   },
   "devDependencies": {
     "nodemon": "^1.19.3"
