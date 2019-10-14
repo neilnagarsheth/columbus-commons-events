@@ -10,7 +10,7 @@ export const verifySignatureFromRequest = (request) => {
   const requestBodyString = qs.stringify(request.body, {format : 'RFC1738'});
   const requestSignatureString = `${VERSION_PREFIX}:${slackTimestamp}:${requestBodyString}`
   const currentSignature = `${VERSION_PREFIX}=${crypto.createHmac('sha256', SIGNING_SECRET).update(requestSignatureString).digest('hex')}`;
-  if(!crypto.timingSafeEqual(Buffer.from(currentSignature, 'utf-8'), Buffer.from(slackSignature))) {
-    throw ({error: 'Request not permitted'});
+  if(!crypto.timingSafeEqual(Buffer.from(currentSignature, 'utf-8'), Buffer.from(slackSignature, 'utf-8'))) {
+    throw new Error('Request not permitted');
   }
 };

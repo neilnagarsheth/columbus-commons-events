@@ -1,0 +1,116 @@
+{
+  "response_type":"ephemeral",
+  "blocks":[
+     {
+        "type":"section",
+        "text":{
+           "type":"plain_text",
+           "text":"Here's whats happening for 2019-07-19."
+        }
+     },
+     {
+        "type":"divider"
+     },
+     {
+        "type":"section",
+        "text":{
+           "type":"mrkdwn",
+           "text":"*Commons For Kids*"
+        }
+     },
+     {
+        "type":"section",
+        "text":{
+           "type":"plain_text",
+           "text":"This weekly event is a family favorite, bringing a new and exciting variety of activities every Friday! From inflatables to entertainers and everything in between, there's something fun for everyone! Check back soon for more information."
+        }
+     },
+     {
+        "type":"context",
+        "elements":[
+           {
+              "type":"plain_text",
+              "text":"10:00 AM - 1:00 PM"
+           }
+        ]
+     },
+     {
+        "type":"actions",
+        "elements":[
+           {
+              "type":"button",
+              "text":{
+                 "type":"plain_text",
+                 "text":"Details"
+              },
+              "url":"https://columbuscommons.org/events/family/"
+           }
+        ]
+     },
+     {
+        "type":"divider"
+     },
+     {
+        "type":"section",
+        "text":{
+           "type":"mrkdwn",
+           "text":"*Popcorn Pops *"
+        }
+     },
+     {
+        "type":"section",
+        "text":{
+           "type":"plain_text",
+           "text":"Movies and Maracas\nEnjoy songs from your favorite family films including Star Wars, Frozen, the Harry Potter series, and more. The first 500 kids will receive a maraca to play along with the symphony.\nThe Picnic with the Pops series is produced by Columbus Symphony Orchestra and requires tickets. Please see the Columbus Symphony Orchestra's website for ticket announcements and availability."
+        }
+     },
+     {
+        "type":"context",
+        "elements":[
+           {
+              "type":"plain_text",
+              "text":"7:00 PM - 8:00 PM"
+           }
+        ]
+     },
+     {
+        "type":"divider"
+     },
+     {
+        "type":"section",
+        "text":{
+           "type":"mrkdwn",
+           "text":"*Free Movie Night - How To Train Your Dragon (2019)*"
+        }
+     },
+     {
+        "type":"section",
+        "text":{
+           "type":"plain_text",
+           "text":"Bring your lawn chair or a blanket and watch How to Train Your Dragon: The Hidden World for FREE under the stars! This movie will immediately follow the ticketed Popcorn Pops event featuring Columbus Symphony Orchestra.\nClick here for more information!"
+        }
+     },
+     {
+        "type":"context",
+        "elements":[
+           {
+              "type":"plain_text",
+              "text":"8:15 PM - 10 PM"
+           }
+        ]
+     },
+     {
+        "type":"actions",
+        "elements":[
+           {
+              "type":"button",
+              "text":{
+                 "type":"plain_text",
+                 "text":"Details"
+              },
+              "url":"https://columbuscommons.org/events/family/"
+           }
+        ]
+     }
+  ]
+}

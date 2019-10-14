@@ -1,0 +1,51 @@
+{
+  "response_type":"ephemeral",
+  "blocks":[
+     {
+        "type":"section",
+        "text":{
+           "type":"plain_text",
+           "text":"Here's whats happening for 2019-06-05."
+        }
+     },
+     {
+        "type":"divider"
+     },
+     {
+        "type":"section",
+        "text":{
+           "type":"mrkdwn",
+           "text":"*Kickball - Session I: Wednesdays*"
+        }
+     },
+     {
+        "type":"section",
+        "text":{
+           "type":"plain_text",
+           "text":"Our weekly kickball league gets the ball rolling in May and continues all summer. Teams must pre-register to get in on the action - click here for more information!"
+        }
+     },
+     {
+        "type":"context",
+        "elements":[
+           {
+              "type":"plain_text",
+              "text":"5:45 PM - 9:00 PM"
+           }
+        ]
+     },
+     {
+        "type":"actions",
+        "elements":[
+           {
+              "type":"button",
+              "text":{
+                 "type":"plain_text",
+                 "text":"Details"
+              },
+              "url":"https://columbuscommons.org/events/kickball/"
+           }
+        ]
+     }
+  ]
+}

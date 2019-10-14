@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "start": "node -r esm index.js",
-    "dev": "nodemon -r esm index.js"
+    "dev": "nodemon -r esm index.js",
+    "test": "jest"
   },
   "dependencies": {
     "esm": "^3.2.25",
@@ -18,6 +19,11 @@
     "string-strip-html": "^4.3.2"
   },
   "devDependencies": {
-    "nodemon": "^1.19.3"
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.3",
+    "sinon": "^7.5.0"
   }
 }

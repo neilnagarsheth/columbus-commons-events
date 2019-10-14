@@ -4,26 +4,18 @@ import { readByRequest } from '../events-service';
 export async function readByCommandRequest(slackRequest) {
   const { text } = slackRequest;
   const response_type = 'ephemeral';
-  try {
-    const events = await readByRequest(text);
-    if(!events.length) {
-      return {
-        response_type,
-        text: `No events scheduled for ${text}`,
-      };
-    }
-    const headerText = `Here\'s whats happening for ${text}.`
+  const events = await readByRequest(text);
+  if(!events.length) {
     return {
       response_type,
-      blocks: generateBlocksFromEvents(headerText, events)
+      text: `No events scheduled for ${text}`,
     };
-  } catch(err) {
-    console.log(err);
-    throw {
-      response_type,
-      text: 'There was an error, please try again later',
-    }
   }
+  const headerText = `Here\'s whats happening for ${text}.`
+  return {
+    response_type,
+    blocks: generateBlocksFromEvents(headerText, events)
+  };
 }
 
 const generateBlocksFromEvents = (headerText, events) => {
